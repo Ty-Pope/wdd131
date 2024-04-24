@@ -1,0 +1,55 @@
+#mission-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+h1,
+h2,
+p,
+li {
+ font-family: 'Times New Roman', Times, serif';
+
+}
+
+h1,
+p {
+ margin-bottom: 0px;
+}
+
+h1 {
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ line-height: 1.5;
+}
+
+h2 {
+ margin-top: 0px;
+ color: #006EB6;
+ font-weight: lighter;
+ letter-spacing: 2px;
+}
+
+p,
+li,
+h2 {
+ font-size: 20px;
+}
+
+main {
+ max-width: 600px;
+ border-top: 1px solid grey;
+ display: flex;
+ flex-direction: column;
+}
+
+#byui-logo {
+ max-width: 150px;
+ align-self: center;
+}
