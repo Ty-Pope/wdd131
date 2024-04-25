@@ -18,9 +18,9 @@ li {
 
 }
 
-h1,
 p {
- margin-bottom: 0px;
+ margin-top: 5px;
+ margin-bottom: 5px;
 }
 
 h1 {
@@ -29,8 +29,11 @@ h1 {
  line-height: 1.5;
 }
 
+h1 {
+ margin-bottom: 0px;
+}
+
 h2 {
- margin-top: 0px;
  color: #006EB6;
  font-weight: lighter;
  letter-spacing: 2px;
