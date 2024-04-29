@@ -4,33 +4,54 @@
  align-items: center;
 }
 
+.dark {
+ background-color: #333;
+ color: white;
+}
+
+.dark h2 {
+ color: #A0D4ED;
+}
+
+#theme-div {
+ display: flex;
+}
+
 header {
  display: flex;
  flex-direction: column;
  align-items: center;
 }
 
+footer {
+ display: flex;
+ justify-content: center;
+}
+
 h1,
 h2,
 p,
 li {
- font-family: 'Times New Roman', Times, serif';
-
-}
-
-p {
- margin-top: 5px;
- margin-bottom: 5px;
+ font-family: 'Times New Roman', 'serif';
 }
 
 h1 {
  text-transform: uppercase;
  letter-spacing: 2px;
+ margin-bottom: 0px;
+}
+
+h1,
+li,
+p {
  line-height: 1.5;
 }
 
-h1 {
- margin-bottom: 0px;
+p,
+ol,
+li {
+ margin-top: 5px;
+ margin-bottom: 5px;
 }
 
 h2 {
