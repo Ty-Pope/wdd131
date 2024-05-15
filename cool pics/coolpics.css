@@ -12,6 +12,32 @@ footer {
  display: none;
 }
 
+.viewer {
+ position: fixed;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ background-color: rgba(0, 0, 0, 0.75);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+#close-div {
+ width: 90%;
+ display: flex;
+ flex-direction: row-reverse;
+}
+
+.close-viewer {
+ background-color: transparent;
+ color: white;
+ font-size: 24px;
+ border: none;
+}
+
 a,
 footer {
  color: white;
@@ -37,7 +63,12 @@ nav {
  justify-content: space-around;
 }
 
-img {
+#large-img {
+ max-width: 90%;
+ max-height: 90%;
+}
+
+.gallery-img {
  max-width: 100%;
  width: 250px;
  height: 250px;
