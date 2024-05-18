@@ -36,14 +36,12 @@ function viewHandler(event) {
  if (src) {
   if (alt) {
    let source = src.split("-");
-   console.log(source);
    // insert the viewerTemplate into the top of the body element
    const header = document.getElementById("header");
    //So it works in github pages (my username is ty-pope)
    let img = source[0] + "-" + source[1] + "-full.jpeg";
    //In IDE it is:
    //let img = source[0] + "-full.jpeg";
-   console.log(img);
    header.insertAdjacentHTML("afterbegin", viewerTemplate(img, alt));
    // add a listener to the close button (X) that calls a function called closeViewer when clicked
    const closeButton = document.querySelector(".close-viewer");
