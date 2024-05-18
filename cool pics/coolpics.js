@@ -39,7 +39,7 @@ function viewHandler(event) {
    console.log(source);
    // insert the viewerTemplate into the top of the body element
    const header = document.getElementById("header");
-   //So it works in github pages
+   //So it works in github pages (my username is ty-pope)
    let img = source[0] + "-" + source[1] + "-full.jpeg";
    //In IDE it is:
    //let img = source[0] + "-full.jpeg";
