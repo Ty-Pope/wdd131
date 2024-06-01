@@ -1,7 +1,11 @@
-body,
+body {
+ margin: 0px;
+ padding: 0px;
+}
+
 p {
- margin: 0;
- padding: 0;
+ padding: 0px;
+ margin: 6px 0px 0px 0px;
 }
 
 h1,
@@ -50,8 +54,8 @@ header h1 {
  position: absolute;
  top: -40px;
  left: 0;
- background-color: #60993E;
- color: white;
+ background-color: #C9EDDC;
+ color: #3A405A;
  padding: 10px;
 }
 
@@ -62,22 +66,35 @@ header h1 {
 .book-parent {
  display: flex;
  flex-direction: row;
- margin: 20px;
+ margin: 30px;
+ margin-bottom: 60px;
 }
 
 .info-div {
- width: 33%;
+ width: 20%;
  border-right: 2px solid #60993E;
  padding: 20px;
+ text-align: right;
+}
+
+.date {
+ font-size: 24px;
 }
 
 .book-div {
- width: 33%;
+ width: 60%;
  padding: 20px;
+ display: flex;
+ flex-direction: column;
+}
+
+.book-div img {
+ align-self: center;
+ margin: 6px;
 }
 
 .filter-div {
- width: 33%;
+ width: 20%;
  border: 2px solid #60993E;
  padding: 20px;
 }

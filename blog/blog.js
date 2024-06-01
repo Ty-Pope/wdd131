@@ -23,6 +23,17 @@ const articles = [
   genre: "Fantasy",
   stars: "⭐⭐⭐⭐",
  },
+ {
+  id: 3,
+  title: "Belgariad Book One: Pawn of Prophecy",
+  date: "Feb 12, 2022",
+  description: "A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+  imgSrc: "https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+  imgAlt: "Book cover for Pawn of Prophecy",
+  ages: "12-16",
+  genre: "Fantasy",
+  stars: "⭐⭐⭐⭐⭐",
+ },
 ];
 
 /**
@@ -31,7 +42,7 @@ const articles = [
 function createInfo() {
  const bookInfoDiv = document.querySelector("main");
  articles.forEach((obj) => {
-  const parent = document.createElement("div");
+  const parent = document.createElement("article");
   parent.className = "book-parent";
   bookInfoDiv.appendChild(parent);
 
@@ -42,6 +53,7 @@ function createInfo() {
 
   const date = document.createElement("p");
   date.textContent = obj.date;
+  date.className = "date";
   bookInfo.appendChild(date);
 
   const age = document.createElement("p");
@@ -49,11 +61,11 @@ function createInfo() {
   bookInfo.appendChild(age);
 
   const genre = document.createElement("p");
-  genre.textContent = obj.date;
+  genre.textContent = obj.genre;
   bookInfo.appendChild(genre);
 
   const rating = document.createElement("p");
-  rating.textContent = obj.title;
+  rating.textContent = obj.stars;
   bookInfo.appendChild(rating);
 
   //Book title, img, and description
