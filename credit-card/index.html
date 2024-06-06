@@ -24,7 +24,7 @@
       height="55px" alt="">
     </div>
     <label for="card-number">Card Number:</label>
-    <input type="number" id="card-number" name="card-number" maxlength="16" placeholder="1234 5678 9012 3456" required>
+    <input type="text" id="card-number" name="card-number" maxlength="16" placeholder="1234 5678 9012 3456" required>
     <div id="front-info">
      <div id="holder">
       <label for="card-name">Card Holder:</label>
@@ -33,8 +33,10 @@
      <div>
       <label id="date-label">Expiration:</label>
       <div>
-       <input type="number" name="card-date" id="card-date" aria-labelledby="date-label" placeholder="MM" required>
-       <input type="number" name="card-date" id="card-date" aria-labelledby="date-label" placeholder="YY" required>
+       <input type="text" name="card-date" id="card-date" maxlength="2" aria-labelledby="date-label" placeholder="MM"
+        required>
+       <input type="text" name="card-date" id="card-date" maxlength="2" aria-labelledby="date-label" placeholder="YY"
+        required>
       </div>
      </div>
     </div>
@@ -48,7 +50,7 @@
     <div id="cvv">
      <div>
       <label for="card-cvv">CVV:</label>
-      <input type="text" name="card-cvv" id="card-cvv" placeholder="XXX" required>
+      <input type="text" name="card-cvv" id="card-cvv" maxlength="3" placeholder="XXX" required>
      </div>
     </div>
    </div>
