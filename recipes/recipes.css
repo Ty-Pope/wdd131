@@ -1,0 +1,136 @@
+header {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: baseline;
+ padding-bottom: 24px;
+ border-bottom: 2px solid black;
+}
+
+header div {
+ display: flex;
+ justify-content: center;
+ align-items: baseline;
+ width: 100%;
+}
+
+header form {
+ display: flex;
+ justify-content: center;
+ width: 100%;
+}
+
+header form input {
+ width: 90%;
+ border: 2px solid black;
+ border-radius: 5px;
+ padding: 5px;
+}
+
+footer {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.submit-button {
+ background-color: transparent;
+ border-radius: 5px;
+}
+
+.submit-button img {
+ width: 24px;
+ height: 24px;
+ max-width: 100%;
+ max-height: 100%;
+}
+
+#skip-content {
+ position: absolute;
+ top: -999em;
+ left: -999em;
+ border: 2px solid black;
+ border-radius: 5px;
+}
+
+#skip-content :focus {
+ position: relative;
+ top: 0;
+ left: 0;
+}
+
+.recipe-img {
+ max-width: 80%;
+ width: 400px;
+ padding: 12px;
+}
+
+header img {
+ width: 60px;
+}
+
+.social img {
+ width: 36px;
+}
+
+.info {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ padding: 12px 12px;
+}
+
+
+.recipe {
+ display: flex;
+ flex-wrap: wrap;
+ border: 2px solid black;
+ border-radius: 5px;
+ margin: 12px;
+}
+
+.recipe h2 {
+ max-width: 300px;
+}
+
+.description {
+ max-width: 300px;
+}
+
+h2 {
+ margin-bottom: 0px;
+}
+
+.star {
+ margin: 0px;
+}
+
+.tags {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.tag {
+ border: 1px solid black;
+ padding: 6px;
+ height: auto;
+}
+
+@media screen and (max-width: 440px) {
+ footer {
+  flex-direction: column-reverse;
+ }
+
+ footer img {
+  margin-top: 12px;
+ }
+}
+
+@media screen and (min-width: 1001px) {
+ main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+ }
+}
