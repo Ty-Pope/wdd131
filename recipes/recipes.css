@@ -1,3 +1,7 @@
+* :focus {
+ outline: 2px solid red;
+}
+
 header {
  display: flex;
  flex-direction: column;
@@ -33,27 +37,28 @@ footer {
  align-items: center;
 }
 
-.submit-button {
+#submit-button {
  background-color: transparent;
  border-radius: 5px;
 }
 
-.submit-button img {
+#submit-button img {
  width: 24px;
  height: 24px;
  max-width: 100%;
  max-height: 100%;
 }
 
-#skip-content {
+#skip-link {
  position: absolute;
  top: -999em;
  left: -999em;
  border: 2px solid black;
  border-radius: 5px;
+ padding: 6px;
 }
 
-#skip-content :focus {
+#skip-link:focus {
  position: relative;
  top: 0;
  left: 0;
