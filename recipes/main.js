@@ -42,11 +42,16 @@ function getStars(rating) {
  }
  return stars + "</span>";
 }
-
-document.addEventListener("DOMContentLoaded", function () {
- document.getElementById("submit-button").addEventListener("click", searchFilter(document.getElementById("search").value));
-
- function searchFilter(inputValue) {
-  return recipes.filter((recipe) => recipe.name.toLowerCase().includes(inputValue.toLowerCase()));
- }
+document.getElementById("search-form").addEventListener("submit", (event) => {
+ event.preventDefault();
+ const searchInput = document.getElementById("search");
+ const searchValue = searchInput.value.trim();
+ const searchResults = searchFilter(searchValue);
+ document.getElementById("main").innerHTML = searchResults.map((recipe) => createTemplate(recipe)).join("");
 });
+function searchFilter(inputValue) {
+ let filteredName = recipes.filter((recipe) => recipe.name.toLowerCase().includes(inputValue.toLowerCase()));
+ let filteredTags = recipes.filter((recipe) => recipe.tags.join(" ").toLowerCase().includes(inputValue.toLowerCase()));
+ let filteredDescription = recipes.filter((recipe) => recipe.description.toLowerCase().includes(inputValue.toLowerCase()));
+ return [...new Set([...filteredName, ...filteredTags, ...filteredDescription])].sort((a, b) => a.name.localeCompare(b.name));
+}
