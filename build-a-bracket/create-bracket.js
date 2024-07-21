@@ -5,7 +5,7 @@ function teamSize(formObject) {
  if (!teamSize || teamSize < 2 || teamSize > 32) {
   alert("Please enter a number between 2 and 32.");
  } else {
-  var teams = '<p class="colored">Enter team names:<br>Their rank will be determined from top to bottom.</p>';
+  var teams = '<p class="colored-no-border">Enter team names:<br>Their rank will be determined from top to bottom.</p>';
   for (var i = 1; i <= teamSize; i++) {
    teams += '<input class="team-names" type="text" name="team' + i + '" value="Team ' + i + '" aria-label="team ' + i + ' name" maxlength="20">';
   }
