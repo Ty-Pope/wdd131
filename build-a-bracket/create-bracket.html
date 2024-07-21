@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <title>Create Bracket</title>
+ <link type="text/css" rel="stylesheet" href="site-plan.css" />
+ <link type="text/css" rel="stylesheet" href="create-bracket.css" />
+ <link rel="icon" type="image/png" href="assets/bracket-logo.png">
+ <script src="create-bracket.js"></script>
+</head>
+
+<body>
+ <div class="skip">
+  <a href="#main">Skip to main</a>
+ </div>
+ <nav>
+  <a href="./index.html">Home</a></li>
+  <a href="./create-bracket.html">Create Bracket</a></li>
+  <a href="./site-plan.html">Site Plan</a></li>
+ </nav>
+ <main id="main">
+  <h1>Create a Bracket</h1>
+  <form class="colored">
+   <div class="form-section">
+    <label for="bracket-name">Bracket Name:</label><br>
+    <input type="text" id="bracket-name" name="bracket-name" placeholder="Bracket Name">
+   </div>
+   <div class="form-section">
+    <label for="team-size">Team Size:</span></label><br>
+    <input type="number" id="team-size" name="team-size" placeholder="0">
+   </div>
+   <button type="button" id="team-button" onclick="teamSize(this)">Next</button>
+
+   <div class="form-section" id="team-section"></div>
+  </form>
+  <h1 class="colored" id="name"></h1>
+  <div class="form-section colored" id="bracket"></div>
+ </main>
+</body>
+
+</html>
