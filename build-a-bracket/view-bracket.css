@@ -1,0 +1,29 @@
+/* General container for the bracket */
+#bracket {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ width: fit-content;
+ height: 100%;
+ margin: 0 auto;
+}
+
+/* Each round container */
+.round {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ width: 100%;
+}
+
+/* Each match container */
+.match {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 500px;
+ margin: 10px;
+ border: 2px solid var(--accent1-color);
+ border-radius: 4px;
+}
